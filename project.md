@@ -1,6 +1,6 @@
 # project 1
 ## Code
-const buttons = document.querySelectorAll('.button');
+```const buttons = document.querySelectorAll('.button');
 const body = document.querySelector('body')
 
 buttons.forEach(function(button){
@@ -18,4 +18,4 @@ buttons.forEach(function(button){
             body.style.backgroundColor = e.target.id;
         }
     })
-})
+})```
