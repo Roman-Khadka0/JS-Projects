@@ -1,3 +1,5 @@
+# project 1
+## Code
 const buttons = document.querySelectorAll('.button');
 const body = document.querySelector('body')
 
