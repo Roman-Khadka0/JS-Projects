@@ -14,12 +14,17 @@ const bgColor = function(){
 
 
 const startChangingColor = function(){
-    let intervalId = setInterval(bgColor,1000)
+    if(!intervalId){
+        intervalId = setInterval(bgColor,1000)
+    }
    
 }
 const stopChangingColor = function(){
 clearInterval(intervalId)
+intervalId = null;
 }
+
+
 document.querySelector('#start').addEventListener('click',startChangingColor);
 document.querySelector('#stop').addEventListener('click',stopChangingColor);
 
